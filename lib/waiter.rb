@@ -23,7 +23,7 @@ def meals
   Meal.all.select do |meal|
     meal.waiter == self #checking for waiter now
   end
-
+end
 
 def best_tipper
   best_tipped_meal = meals.max do |meal_a, meal_b|
